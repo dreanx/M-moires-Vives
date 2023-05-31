@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><a href="index.html">
+        <img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">Actualités</a></li>
+          <li><a href="#">Parcours</a></li>
+          <li><a href="#">Ressources</a></li>
+          <li><a href="#">Participer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="form-section">
+      <h1>Téléphone : 06 77 88 96 70</h1>
+      <h1>
+        Courriel :
+        <a href="mailto:contact@memoiresvives.org">contact@memoiresvives.org</a>
+      </h1>
+      <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="Nom">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>2023 - Association Mémoires Vives</p>
+    </footer>
+  </body>
+</html>

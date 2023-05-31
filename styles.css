@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar .logo img {
+  width: 300px;
+  margin-left: 50%;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  margin-right: 10%;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.navbar nav ul li {
+  padding-left: 10px; 
+}
+
+.navbar nav ul li a {
+  color: #200283;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.navbar nav ul li a:hover {
+  background-color: #cbdfff;
+  padding: 10px;
+}
+
+.hero-section {
+  background-image: url('/assets/background.jpg');
+  margin-top: 90px;
+  line-height: 40px;
+  background-size: cover;
+  background-position: right center;
+  color: #010e58fb;
+  padding: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .hero-content {
+  max-width: 50%;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2e11c1;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #eee;
+}
+
+.content-section {
+  background-color: #eff2fcd1;
+  padding: 40px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #000000;
+}
+
+.content-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+}
+
+footer p {
+  color: rgb(0, 0, 0);
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+
+.support-section ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 50px;
+}
+
+
+/*Form*/
+
+.form-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #aec3f65a;
+  margin-top: 100px;
+}
+
+.form-section h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #0320e04c;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 1 2px 4px rgba(157, 0, 193, 0.1);
+}
+
+.form-container h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #555;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+    margin-right: 45%;
+  }
+
+  .navbar nav {
+
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+
+  .hero-section {
+    padding: 40px;
+    margin-top: 200px;
+  }
+
+  .hero-section .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form-section {
+    padding: 40px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
