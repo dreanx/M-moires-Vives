@@ -63,12 +63,12 @@ body {
 }
 
 .hero-section .hero-content {
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .hero-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
 .hero-section p {
@@ -122,6 +122,7 @@ footer {
   text-align: center;
   color: #000000;
   font-size: 14px;
+  margin-top: 90px;
 }
 
 footer p {
