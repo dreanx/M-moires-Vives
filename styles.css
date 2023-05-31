@@ -51,7 +51,7 @@ body {
 }
 
 .hero-section {
-  background-image: url('/assets/background.jpg');
+  background-image: "/assets/background.jpg";
   margin-top: 90px;
   line-height: 40px;
   background-size: cover;
