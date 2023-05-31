@@ -42,11 +42,13 @@ body {
   color: #200283;
   text-decoration: none;
   padding: 10px;
+  border-radius: 16px;
   transition: background-color 0.6s ease;
 }
 
 .navbar nav ul li a:hover {
-  background-color: #cbdfff;
+  background-color: #77a9f997;
+  border-radius: 16px;
   padding: 10px;
 }
 
@@ -88,7 +90,7 @@ body {
 }
 
 .button:hover {
-  background-color: #eee;
+  background-color: #3718ff8a;
 }
 
 .content-section {
