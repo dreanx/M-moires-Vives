@@ -320,14 +320,17 @@ footer {
 
   nav {
     display: none;
-    width: 100%;
     margin-top: 10px;
+  }
+
+  .navbar nav {
+    padding-left: 0;
   }
 
   nav.active {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: cenetr;
   }
 
   nav ul {
