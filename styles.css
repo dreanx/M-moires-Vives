@@ -18,6 +18,19 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
+  padding: 10px 20px;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav.active ul {
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .logo img {
@@ -74,7 +87,7 @@ body {
 }
 
 .hero-section p {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
@@ -82,15 +95,16 @@ body {
   display: inline-block;
   background-color: #2e11c1;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 15px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 24px;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #3718ff8a;
+  background-color: #140097;
 }
 
 .content-section {
@@ -129,7 +143,6 @@ footer {
 
 footer p {
   color: rgb(0, 0, 0);
-  margin-top: 150px;
   margin-bottom: 50px;
   font-weight: bold;
 }
@@ -219,13 +232,14 @@ footer {
 /*Media Queries*/
 
 @media (max-width: 1200px) {
+
   .navbar {
     flex-direction: column;
   }
 
   .navbar .logo {
     margin-bottom: 10px;
-    margin-right: 45%;
+    margin-right: 50% ;
   }
 
   .navbar nav {
@@ -244,11 +258,11 @@ footer {
   }
 
   .hero-section h1 {
-    font-size: 24px;
+    font-size: 42px;
   }
 
   .hero-section p {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 20px;
     width: 100%;
   }
@@ -263,11 +277,13 @@ footer {
   }
 
   .form-section {
+    margin-top: 200px;;
     padding: 40px;
   }
 
   .form-container {
     padding: 20px;
+    width: 100%;
   }
 
   .form-container h2 {
@@ -279,8 +295,65 @@ footer {
   .form-container textarea {
     margin-bottom: 15px;
   }
+  .support-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
 }
 
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo img {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    padding: 5px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .support-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .boxMobile {
+    background-color: rgba(169, 163, 243, 0.814);
+  }
+}
 
 
